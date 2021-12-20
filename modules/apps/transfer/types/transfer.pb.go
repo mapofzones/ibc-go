@@ -30,7 +30,7 @@ type FungibleTokenPacketData struct {
 	// the token denomination to be transferred
 	Denom string `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
 	// the token amount to be transferred
-	Amount uint64 `protobuf:"varint,2,opt,name=amount,proto3" json:"amount,omitempty"`
+	Amount uint64 `protobuf:"varint,2,opt,name=amount,proto3" json:"amount,string,omitempty"`
 	// the sender address
 	Sender string `protobuf:"bytes,3,opt,name=sender,proto3" json:"sender,omitempty"`
 	// the recipient address on the destination chain
